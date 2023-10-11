@@ -1,7 +1,7 @@
 from django.views.generic.edit import FormView
 from django.http import HttpResponse
-from myapp.forms import SubscribeForm
-from myapp.tasks import send_notification_mail
+from .forms import SubscribeForm
+from .tasks import send_notification_mail
 
 class IndexView(FormView):
     template_name = 'index.html'
